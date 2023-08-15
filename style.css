@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
-    
+
 
 }
 
@@ -34,6 +34,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	text-decoration: none;
+	color: black;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
