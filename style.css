@@ -183,7 +183,7 @@ ul {
   letter-spacing: 0.075rem;
   font-weight: 500;
   position: relative;
-  transition: all 2s ease ;
+ 
 }
 
 .menu-link::after {
@@ -224,6 +224,7 @@ ul {
   transform: translate(0,11%);
   opacity: 0;
   visibility: hidden;
+  transition: all .2s ease;
 }
 
 .header-center .menu-list .menu-list-item:hover .dropdown-menu-wrapper{
