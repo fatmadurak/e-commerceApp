@@ -129,6 +129,7 @@ ul {
 
 .header {
   border-bottom: 0.0625rem solid #dee0ea;
+  position: relative;
 }
 
 .global-notification {
@@ -259,6 +260,31 @@ padding-bottom: .4rem;
 	
 	}
 	
+.dropdown-menu-megamenu{
+
+	background-color: white;
+	border: 1px solid #dee0ea;
+    padding: 1.375rem;
+
+	display: flex;
+	column-gap:3.125rem ;
+
+}
+
+.megamenu-wrapper.dropdown-menu-wrapper{
+
+	
+left: 0;
+width: 100%;
+
+}
+
+
+.megamenu-wrapper{
+
+	position: static !important;
+
+}
 
 
 
