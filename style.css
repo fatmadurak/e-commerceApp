@@ -154,6 +154,11 @@ ol, ul {
 
 	}
 
+
+	.menu-link:hover{
+
+		color: #1367ef;
+	}
 	.menu-link:hover.menu-link::after{
 
 		width: 100%;
