@@ -33,21 +33,18 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
+
+
 	text-decoration: none;
 	color: black;
-	vertical-align: baseline;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -127,6 +124,11 @@ ol, ul {
 		column-gap:1.875rem ;
 
 	}
+	.menu-list-item{
+
+
+		display: flex;
+	}
 
 	.menu-link{
 
@@ -134,9 +136,33 @@ ol, ul {
 		font-size: .875rem;
 		letter-spacing:0.075rem;
 		font-weight:500;
+		position: relative;
 	}
 
+	.menu-link::after{
+
+   content: "";
+   width: 0;
+   height: 1px;
+   transform: translate(-50%);
+   position: absolute;
+   left: 50%;
+   bottom: -2px;
+   background-color: #1367ef;
+   transition: .2s ease width;
+
+
+	}
+
+	.menu-link:hover.menu-link::after{
+
+		width: 100%;
+	}
+
+	.header-center .menu-list .menu-link.active::after {
+		width: 100%;
 	
+	}
 
 	.menu-link i{
 
