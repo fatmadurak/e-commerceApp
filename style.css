@@ -548,7 +548,7 @@ justify-content: flex-start;
 align-items: center;
 
 position: fixed;
-left: 0;
+left:-100%;
 top: 0;
 background-color:#fff;
 border-right: .0625rem solid #dee0ea;
@@ -566,7 +566,7 @@ width: 40%;
 
 .header-wrapper .menu-link{
 
-  margin-top: 4rem;
+  margin-top: 5rem;
   font-size: 1rem;
   
   }
