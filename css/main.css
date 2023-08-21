@@ -6,6 +6,7 @@
 /*componets*/
 
 @import url("components/modal-search.css");
+@import url("components/slider.css");
 
-
+/*layout*/
 @import url("layout/header.css");

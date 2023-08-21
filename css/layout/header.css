@@ -301,15 +301,8 @@
     
 
 
-.header-center{
-
-display: none;
-
-
-}
-
   .header-wrapper .header-center .menu-list{
-  
+
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -321,7 +314,7 @@ display: none;
   border-right: .0625rem solid #dee0ea;
   height: 100%;
   width: 40%;
-  
+
   }
   
 
