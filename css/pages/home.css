@@ -20,6 +20,7 @@ margin-bottom: 1.875rem;
 
 .categories{
     margin: 2.5rem 0;
+ 
 
 
 }
@@ -29,12 +30,27 @@ margin-bottom: 1.875rem;
     width: 100%;
  display: flex;
  gap:1.875rem;
+ flex-wrap: wrap;
+
+
 
 
 
 }
 
 
+/*categories responsive codes*/
 
+
+@media only screen and (max-width:1050px) {
+  
+
+ .category-list{
+ 
+
+ }
+
+
+  } 
 
 

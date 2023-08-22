@@ -31,6 +31,11 @@
   font-weight: 600;
 }
 
+.slider-item a{
+position: relative;
+ z-index: 1;
+
+}
 .slider-buttons {
   position: absolute;
   top: 0;
@@ -67,6 +72,7 @@
   opacity: 1;
   border-color: #1367ef;
 }
+
 
 .slider-buttons button:hover i {
   color: #fff;
