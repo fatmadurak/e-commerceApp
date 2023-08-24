@@ -70,6 +70,24 @@
   display: grid;
   gap: 1.875rem;
   grid-template-columns: 1fr 1fr 1fr;
+  flex-wrap: wrap;
 }
+
+
+/*blogs responsive*/
+@media only screen and (max-width: 768px) {
+
+    .blogs .blog-list{
+
+
+grid-template-columns: 1fr;
+
+}
+
+
+
+}
+
+
 
 /*blogs end*/
