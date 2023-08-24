@@ -1,114 +1,75 @@
-.section-title{
-
-text-align: center;
-margin-bottom: 1.875rem;
-
+.section-title {
+  text-align: center;
+  margin-bottom: 1.875rem;
 }
 
-.section-title h2{
-
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 0.8;
-    margin-bottom: .25rem;
-
+.section-title h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 0.8;
+  margin-bottom: 0.25rem;
 }
 
-
-
-
-
-.categories{
-    margin: 2.5rem 0;
- 
-
-
+.categories {
+  margin: 2.5rem 0;
 }
 
-.category-list{
-
-    width: 100%;
- display: flex;
- gap:1.875rem;
- flex-wrap: wrap;
-
-
-
-
-
+.category-list {
+  width: 100%;
+  display: flex;
+  gap: 1.875rem;
+  flex-wrap: wrap;
 }
-
 
 /*categories responsive codes*/
 
-
-@media only screen and (max-width:1050px) {
-  
-
- .category-list{
- 
-
- }
-
-
-  } 
-
-
+@media only screen and (max-width: 1050px) {
+  .category-list {
+  }
+}
 
 /*section products  css*/
 
-
-.products{
-
-
-margin-bottom: 2.5rem;
-
-
+.products {
+  margin-bottom: 2.5rem;
 }
 
-.products .product-list{
-
-
-display: flex;
-column-gap: 2rem;
-flex-wrap: wrap;
-
+.products .product-list {
+  display: flex;
+  column-gap: 2rem;
+  flex-wrap: wrap;
 }
 
 /*campaigns start*/
 
-
-
-
-.campaigns .campaigns-wrapper{
-
-    display: flex;
-    gap:1.875rem ;
-    margin-bottom: 2.5rem;
-    flex-wrap: wrap;
-  
+.campaigns .campaigns-wrapper {
+  display: flex;
+  gap: 1.875rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
 }
 
 /*campaigns responsive*/
-@media only screen and (max-width:768px) {
-  
-
-    .campaigns-wrapper .campaign-item{
-
-        flex: unset !important;
-        width: 100%;
-    }
-
-   
-     } 
-   
+@media only screen and (max-width: 768px) {
+  .campaigns-wrapper .campaign-item {
+    flex: unset !important;
+    width: 100%;
+  }
+}
 
 /*campaigns end*/
 
 /*blogs start*/
 
+.blogs {
+  margin-bottom: 1.875rem;
+}
 
+.blogs .blog-list {
+
+  display: grid;
+  gap: 1.875rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
 /*blogs end*/
-
-
