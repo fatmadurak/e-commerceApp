@@ -1,0 +1,72 @@
+.campaign-item{
+
+    flex: 1;
+    padding: 70px 35px;
+    
+    
+
+}
+
+.campaigns-wrapper:nth-child(1) .campaign-item:nth-child(1){
+
+    background-image: url("../../img/campaigns/banner1.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.campaigns-wrapper:nth-child(1) .campaign-item:nth-child(2){
+
+    background-image: url("../../img/campaigns/banner2.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.campaigns-wrapper:nth-child(2) .campaign-item:nth-child(1){
+
+    background-image: url("../../img/campaigns/banner3.png");
+    background-position: center;
+    background-size: cover;
+    flex: 2;
+
+}
+
+.campaigns-wrapper:nth-child(2) .campaign-item:nth-child(2){
+
+    background-image: url("../../img/campaigns/banner4.png");
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.campaign-item .campaign-title{
+
+    color: white;
+    font-size: 1.625rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+
+}
+
+.campaign-item .campaign-description{
+
+    color: white;
+    margin: 2.5rem 0;
+    font-size: .875rem;
+    
+}
+
+.campaign-item a:hover i{
+
+    color:#1367ef;
+}
+.campaign-item i{
+
+color: white;
+
+}
+
+
+

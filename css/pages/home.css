@@ -75,7 +75,40 @@ flex-wrap: wrap;
 
 }
 
+/*campaigns start*/
 
 
+
+
+.campaigns .campaigns-wrapper{
+
+    display: flex;
+    gap:1.875rem ;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+  
+}
+
+/*campaigns responsive*/
+@media only screen and (max-width:768px) {
+  
+
+    .campaigns-wrapper .campaign-item{
+
+        flex: unset !important;
+        width: 100%;
+    }
+
+   
+     } 
+   
+
+/*campaigns end*/
+
+/*blogs start*/
+
+
+
+/*blogs end*/
 
 
