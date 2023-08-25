@@ -204,5 +204,60 @@ margin: 1.25rem 0;
 /*campaign-single end*/
 
 /*policy start*/
+
+
+.policy{
+
+border: .0625rem solid #dee0ea;
+margin: top 40%;
+
+}
+
+.policy .policy-list{
+
+display: flex;
+justify-content: space-between;
+padding: 25px 0;
+flex-wrap: wrap;
+
+
+}
+
+
+.policy .policy-item{
+
+  display: flex;
+  gap: .5rem;
+
+}
+
+
+.policy-item i{
+
+  font-size: 3.125rem;
+  display: flex;
+
+
+}
+
+.policy-item .policy-texts{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.policy-item .policy-texts strong{
+
+font-weight: 600;
+  
+}
+
+.policy-item .policy-texts span{
+
+  font-size: .75rem;
+  
+}
 /*policy end*/
 
