@@ -91,3 +91,114 @@ grid-template-columns: 1fr;
 
 
 /*blogs end*/
+
+
+/*brands start*/
+
+.brands{
+
+
+margin: 2.5rem 0;
+
+
+
+}
+
+.brands .brand-list{
+
+
+
+
+  border: .0625rem solid #dee0ea;
+  padding: 1.875rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+
+/*brands end*/
+
+/*campaign-single start*/
+.campaign-single{
+
+background-image: url("../../img/single-campaign.png");
+padding: 8.75rem .9375rem;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+
+margin-bottom: 1.875rem;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.campaign-single .campaign-wrapper{
+
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+ 
+
+}
+
+.campaign-wrapper h2{
+
+  color: white;
+  font-size: 1.5625rem;
+}
+
+.campaign-wrapper strong{
+
+  color: white;
+  font-size: 3.4375rem;
+    font-weight: 600;
+    margin: 1.25rem 0;
+
+}
+.campaign-wrapper span{
+
+  background-color: white;
+  display: inline-block;
+  width: 3.125rem;
+    height: .3125rem;
+
+}
+
+.campaign-wrapper a{
+
+background-color: white;
+transition: ease .2s all;
+margin: 1.25rem 0;
+
+}
+
+.campaign-wrapper a:hover{
+
+  background-color:  #1367ef;
+  border: .0625rem solid #1367ef;
+  color: white;
+
+  }
+  
+  
+.campaign-wrapper a:hover i{
+
+ 
+  color: white;
+
+  }
+  
+
+
+/*campaign-single end*/
