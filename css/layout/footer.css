@@ -172,6 +172,40 @@ transition: all ease .2s;
 
 /*copyright start*/
 
+.footer .copyright-row{
+
+    padding-top: 1.875rem;
+    border-top: 1px solid #dee0ea;
+
+}
+
+.footer-copyright{
+
+    display: grid;
+    grid-template-columns:1.2fr 1fr 1fr ;
+    align-items: center;
+}
+
+.footer-copyright .site-copyright{
+
+    font-size: .75rem;
+    margin-right: 1rem;
+}
+
+.menu-copyright .copyright-menu-list{
+
+    display: flex;
+}
+
+
+.menu-copyright .copyright-menu-list .copyright-menu-item a{
+
+  font-size: .75rem;
+  margin-right: 1rem;
+  border-right: .0625rem solid #dee0ea;
+  padding-right: .5rem;
+}
+
 
 
 /*copyright end*/
