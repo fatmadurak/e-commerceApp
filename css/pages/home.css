@@ -62,7 +62,7 @@
 /*blogs start*/
 
 .blogs {
-  margin-bottom: 1.875rem;
+  margin: 1.875rem 0;
 }
 
 .blogs .blog-list {
