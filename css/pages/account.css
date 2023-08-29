@@ -1,0 +1,154 @@
+
+
+.account{
+
+    margin-bottom: 2rem;
+}
+
+
+.account .account-wrapper{
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+
+}
+
+
+.account-wrapper .account-column{
+
+flex: 1;
+
+
+}
+
+.account-wrapper .account-column:nth-child(2){
+
+margin-top: 3.4375rem;
+    
+    
+    }
+
+.account-wrapper .account-form{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+      gap: 1.25rem;
+
+}
+
+.account-wrapper .account-form label{
+
+display: flex;
+align-items: center;
+
+
+}
+
+.account-wrapper .account-form .remember{
+
+margin-left: .5rem;
+font: size .75rem ;
+   
+
+}
+
+
+.account .account-wrapper h2{
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: .625rem;
+
+
+}
+
+.account-wrapper .account-form > div{
+
+
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+    }
+
+
+    .account-wrapper .account-form input{
+
+       
+        border: none;
+        border: 1px solid #dee0ea;
+        
+        
+        }
+
+
+.account-wrapper .account-form label{
+
+font-size: .875rem ;
+
+
+
+}
+
+.account-wrapper .account-form span span{
+
+    color: #e51414;
+    font-weight: bold;
+    
+    
+    
+    }
+
+
+    
+.account-wrapper .account-form .form-text{
+
+    
+    font-size: .75rem;
+ 
+    
+    
+    }
+
+        
+.account-wrapper .account-form .text{
+
+    
+    color: #e51414;
+ 
+    
+    
+    }
+
+
+
+    
+
+
+    .account-form .btn-form{
+
+
+       
+    border:.0625rem solid #e51414;
+    background-color: #e51414;
+    padding: 0 1.5625rem;
+    align-self: flex-start;
+    color: #fff;
+    font-size: .75rem;
+
+
+
+
+    }
+
+
+
+
+
