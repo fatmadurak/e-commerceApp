@@ -1,0 +1,176 @@
+
+
+.contact .contact-bottom{
+
+margin: 2.5rem 0;
+
+}
+
+.contact-bottom .contact-title{
+
+margin-bottom: 2rem;
+
+
+}
+
+.contact-bottom .contact-title h4{
+
+    color: #e51414;
+    font-weight: 500;
+    
+    }
+
+
+    .contact-bottom .contact-title h2{
+
+        font-size: 2.5rem;
+    font-weight: 600;
+    
+    }
+
+    
+.contact-bottom .contact-title p{
+
+    font-size: .875rem;
+    
+}
+
+
+
+.contact-bottom .contact-elements{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     gap: 3.75rem;
+    
+}
+
+
+
+.contact-bottom .contact-form{
+
+    
+  
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: .625rem;
+
+}
+
+.contact-bottom .contact-form>div{
+
+ 
+    display: flex;
+    flex-direction: column;
+    flex:1;
+
+
+}
+
+.contact-bottom .contact-form input{
+
+ 
+
+
+
+}
+
+.contact-bottom .contact-form label{
+
+ 
+font-size: .875rem;
+
+
+}
+
+.contact-bottom .contact-form button{
+
+ 
+background-color: black;
+color: white;
+border: 1px solid black;
+
+padding: 0 25px;
+margin-top: .625rem;
+
+}
+
+.contact-bottom .contact-form textarea{
+
+ 
+  overflow: auto;
+    
+    }
+
+.contact-bottom .contact-form>div:nth-child(3),
+.contact-bottom .contact-form>div:nth-child(4){
+
+ 
+   flex: 100%;
+
+
+}
+
+
+.contact-bottom .contact-form>div span{
+
+ 
+    display: inline-block;
+    color: #e51414;
+    font-weight: 500;
+
+}
+
+
+.contact-bottom .contact-info{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.25rem;
+
+
+
+}
+
+.contact-bottom .contact-info .contact-item{
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     gap: 1.875rem;
+
+
+}
+
+
+
+ .contact-info .contact-item p{
+
+    margin: .9375rem 0;
+    font-size: .875rem;
+
+}
+
+.contact-info .contact-item a{
+
+font-size: .875rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+    
