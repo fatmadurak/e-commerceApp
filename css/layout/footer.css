@@ -3,19 +3,19 @@
 .footer .subscribe-row {
   background-color: #000;
   color: white;
-  padding: 80px 0;
+  padding: 5rem 0;
 }
 
 .footer .footer-row-wrapper {
   display: flex;
   justify-content: space-between;
-  column-gap: 200px;
+  column-gap: 12.5rem;
 }
 
 .footer .subscribe-title,
 .footer .contact-title {
-  font-size: 30px;
-  max-width: 500px;
+  font-size: 1.875rem;
+  max-width: 31.25rem;
   font-weight: 500;
   line-height: 1.2;
   color: white;
@@ -23,31 +23,31 @@
 
 .footer .subscribe-desc,
 .footer .contact-desc {
-  font-size: 14px;
+  font-size: .875rem;
   opacity: 0.6;
-  margin-top: 4px;
+  margin-top: .25rem;
   color: white;
 }
 
 .footer .footer-subscribe-bottom,
 .footer .footer-contact-bottom {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .footer .footer-subscribe-bottom form {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
 }
 
 .footer .footer-subscribe-bottom form > input {
   flex: 1;
-  height: 48px;
+  height: 3rem;
   border: none;
 }
 
 .footer .footer-subscribe-bottom form > button {
-  height: 48px !important;
+  height: 3rem !important;
   border-color: #fff;
   background-color: #000;
   color: #fff;
@@ -55,31 +55,39 @@
 
 .footer .privacy-text,
 .footer .privacy-text a {
-  font-size: 10px;
+  font-size: .625rem;
   color: #75767c;
-  margin-top: 4px;
+  margin-top: .25rem;
   font-weight: 500;
+
+}
+.footer .privacy-text strong
+ {
+color: white;
+opacity: .3;
+
 }
 
 .footer .footer-contact-bottom .download-app {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: .625rem;
 }
 
 /*! subscribe end  */
 
 /*! widgets start  */
 .widgets-row {
-  padding: 60px 0;
-  border-bottom: 1px solid #dee0ea;
+  padding: 3.75rem 0;
+  border-bottom: .0625rem solid #dee0ea;
 }
 
 .widgets-row .footer-widgets {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: .625rem;
+ 
 }
 
 .widgets-row .footer-widgets > div {
@@ -91,29 +99,43 @@
 }
 
 .footer-widgets .brand-info .footer-desc {
-  width: 400px;
-  font-size: 14px;
-  margin: 15px 0;
+  width: 25rem;
+  font-size: .875rem;
+  margin: .9375rem 0;
 }
 
 .footer-widgets .brand-info .footer-contact {
-  font-size: 14px;
+  font-size: .875rem;
 }
 
 .footer-widgets .widget-nav-menu h4 {
   font-weight: 600;
-  font-size: 15px;
+  font-size: .9375rem;
 }
 
 .footer-widgets .widget-nav-menu ul {
-  margin-top: 20px;
-  font-size: 13px;
+  margin-top: 1.25rem;
+  font-size: .8125rem;
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: .3125rem;
+  
+
+
+
+}
+.footer-widgets .widget-nav-menu ul li {
+
+
+
+width: 100%;
+
 }
 
 .footer-widgets .widget-nav-menu ul li a {
+  
+
+width: 100%;
   transition: 0.2s ease all;
 }
 
@@ -125,14 +147,14 @@
 
 /*! copyright start  */
 .footer-copyright {
-  margin: 40px 0;
+  margin: 2.5rem 0;
   display: flex;
   align-items: center;
 }
 
 .footer-copyright .site-copyright {
-  font-size: 12px;
-  margin-right: 10px;
+  font-size: .75rem;
+  margin-right: .625rem;
 }
 
 .footer-copyright .footer-menu {
@@ -142,13 +164,13 @@
 .footer-copyright .footer-menu-list {
   display: flex;
   align-items: center;
-  font-size: 12px;
-  column-gap: 10px;
+  font-size: .75rem;
+  column-gap: .625rem;
 }
 
 .footer-copyright .footer-menu-list .list-item:not(:last-child) {
-  padding-right: 10px;
-  border-right: 1px solid #dee0ea;
+  padding-right: .625rem;
+  border-right: .0625rem  solid #dee0ea;
 }
 /*! copyright end  */
 
@@ -157,11 +179,11 @@
 @media (max-width: 768px) {
   .footer .footer-row-wrapper {
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 1.25rem;
   }
 
   .footer .brand-info {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   .footer-widgets .brand-info .footer-desc {
@@ -173,13 +195,13 @@
   }
 
   .footer .brand-info {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 
   .footer-copyright {
     flex-direction: column;
     text-align: center;
-    row-gap: 10px;
+    row-gap: .625rem;
   }
 
   .footer-copyright .footer-menu {
