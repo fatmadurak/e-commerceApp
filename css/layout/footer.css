@@ -20,6 +20,7 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  flex: 50%;
 }
 
 .subscribe-title {
@@ -80,6 +81,8 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  background-color: yellow;
+  width: 100%;
 }
 
 .footer-contact-bottom .privacy-text {
@@ -88,6 +91,25 @@
   font-size: 0.625rem;
   margin-top: 0.625rem;
 }
+
+
+
+@media only screen and (max-width:768px) {
+
+
+.footer.footer-row-wrapper{
+
+
+ flex-direction: column;
+ background-color: red;
+
+
+}
+
+}
+
+
+
 
 /*subscribe-row end*/
 
