@@ -108,13 +108,20 @@ opacity: .3;
   font-size: .875rem;
 }
 
+
+.footer-widgets .widget-nav-menu  {
+ 
+margin-top: 2rem;
+
+}
 .footer-widgets .widget-nav-menu h4 {
   font-weight: 600;
   font-size: .9375rem;
+
 }
 
 .footer-widgets .widget-nav-menu ul {
-  margin-top: 1.25rem;
+  margin-top: .8rem;
   font-size: .8125rem;
   display: flex;
   flex-direction: column;
