@@ -112,126 +112,127 @@
 }
 
 .product-info .colors-wrappers .color-wrapper {
-
-    border: 1px solid transparent;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    padding: 2px;
-    cursor: pointer;
-    transition: 0.2s ease all;
-
+  border: 1px solid transparent;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+  transition: 0.2s ease all;
 }
 .product-info .colors-wrappers .active {
-
-    border: 1px solid red;
-
+  border: 1px solid red;
 }
 
 .product-info .colors-wrappers .color-wrapper:hover {
-
- border-color: red;
-
+  border-color: red;
 }
 
-
 .colors-wrappers .color-wrapper .blue-color {
-
-    background-color: blue;
-    display: inline-block;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-
+  background-color: blue;
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .colors-wrappers .color-wrapper .red-color {
-
-background-color: red;
-display: inline-block;
-border-radius: 50%;
-width: 100%;
-height: 100%;
+  background-color: red;
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 .colors-wrappers .color-wrapper .green-color {
-
-    background-color:green ;
-    display: inline-block;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-
+  background-color: green;
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 .colors-wrappers .color-wrapper .purple-color {
-
-
-    background-color: purple;
-    display: inline-block;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
+  background-color: purple;
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .colors-wrappers .color-wrapper input {
-
-appearance: none;
-
+  appearance: none;
 }
 
-.product-sizes .product-size{
-
-    font-weight: 600;
-    font-size: 0.875rem;
+.product-sizes .product-size {
+  font-weight: 600;
+  font-size: 0.875rem;
 }
 
-
-.product-sizes .product-size-list{
-
-display: flex;
-margin: 1rem 0;
-flex-wrap: wrap;
-gap: 1rem;
-
+.product-sizes .product-size-list {
+  display: flex;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
+.product-sizes .product-size-list span {
+  display: inline-block;
+  border: 1px solid #dee0ea;
+  padding: 0.4rem 2.5rem;
+}
 
-.product-sizes .product-size-list span{
+.product-sizes .product-size-list span:hover {
+  background-color: red;
+  border-color: red;
+  color: #fff;
+}
+
+.product-sizes .product-size-list .active {
+  background-color: red;
+  border-color: red;
+  color: #fff;
+}
+
+.product-info .cart-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-info .cart-button input {
+  width: 20%;
+  height: 100%;
+  padding: 0.9375rem;
+  border: 1px solid #dee0ea;
+}
+
+.product-info .cart-button button {
+  flex: 85%;
+  height: 100%;
+}
+
+.product-info .product-extra-buttons {
+  display: flex;
+  gap: 1rem;
+ 
+}
+
+.product-info .product-extra-buttons i {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.product-info .product-extra-buttons span {
+  font-size: 0.75rem;
+  display: inline-block;
+  color: gray;
+}
+
+.product-info .divider{
 
 
-   display: inline-block;
-   border:1px solid #dee0ea;
-   padding: .4rem 2.5rem;
+    border-bottom: .0625rem solid #dee0ea;
+    padding-bottom: 1rem;
 
 
-    }
-
-    .product-sizes .product-size-list span:hover{
-
-        background-color: red;
-        border-color: red;
-        color: #fff;
-     
-         }
-
-    .product-sizes .product-size-list .active{
-
-     background-color: red;
-     border-color: red;
-     color: #fff;
-         }
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
