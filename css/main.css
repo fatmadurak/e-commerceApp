@@ -12,6 +12,9 @@
 @import url("components/campaign-item.css");
 @import url("components/blog-item.css");
 @import url("components/brand-item.css");
+@import url("components/product-detail/single-topbar.css");
+@import url("components/product-detail/single-content.css");
+@import url("components/product-detail/single-tabs.css");
 
 /*layout*/
 @import url("layout/header.css");
@@ -24,3 +27,4 @@
 @import url("pages/contact.css");
 @import url("pages/account.css");
 @import url("pages/cart.css");
+@import url("pages/product.css");
