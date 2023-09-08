@@ -178,6 +178,7 @@
   display: inline-block;
   border: 1px solid #dee0ea;
   padding: 0.4rem 2.5rem;
+  flex: 1;
 }
 
 .product-sizes .product-size-list span:hover {
@@ -241,33 +242,71 @@
 
 margin: 2rem 0;
 
-font-size: .875rem;
+font-size: .8125rem;
 
 
 }
 
 
-.product-info .product-meta .product-sku{
+@media Only screen and (max-width:768px) {
+  
+  .site-main{
+
+    flex-direction: column;
+   
+  }
 
 
 
+
+  .product-gallery{
+
+    flex: 1;
+    width: 100%;
+  }
+
+  .site-main .product-gallery .slider-images img{
+
+    width: 30%;
+    flex: 1;
+  }
+
+  .product-info{
+
+    flex: 1;
+  }
+
+  .product-sizes .product-size-list span{
+
+
+    padding: .375rem!important;
+
+ 
+
+  }
+
+ .product-info .product-extra-buttons span{
+
+  font-size: 0.7rem;
+ }
+
+
+
+
+
+ 
+
+  
+  
 
 
 }
 
-.product-info .product-meta .product-categories{
 
 
 
 
 
-}
-.product-info .product-meta .product-tags{
 
-
-
-
-
-}
 
 
