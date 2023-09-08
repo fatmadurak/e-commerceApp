@@ -65,7 +65,7 @@ td {
   display: flex;
   align-items: center;
   font-size: 0.75rem;
-  margin: .3rem 0;
+  margin: 0.3rem 0;
 }
 .comment-meta span:first-child {
   font-weight: bold;
@@ -75,58 +75,108 @@ td {
   font-size: 0.875rem;
 }
 
-.tab-review h2{
+.tab-review h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
 
-    font-size: 1rem;
+  border-bottom: 0.0625rem solid #dee0ea;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  width: 100%;
+}
+
+.comment-form label {
+  font-size: 0.875rem;
+}
+
+.comment-form label span {
+  font-size: 0.875rem;
+  color: red;
+}
+
+.comment-form .comment-form-rating .rating-star {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+}
+
+.comment-form .comment-form-rating .rating-star li {
+  padding-right: 0.4rem;
+  border-right: 0.0625rem solid #dee0ea;
+}
+
+.comment-form .comment-form-rating .rating-star li i {
+  color: #dee0ea;
+  font-size: 0.75rem;
+}
+
+.comment-form .comment-form-review {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.comment-form .comment-form-review textarea {
+  border: 1px solid #dee0ea;
+  outline: none;
+}
+
+.comment-form .comment-form-review textarea:focus {
+  border-color: grey;
+}
+
+.comment-form .comment-form-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form .comment-form-name input[type="text"] {
+  border: 1px solid #dee0ea;
+  outline: none;
+}
+
+.comment-form-name input[type="text"]:focus {
+  border-color: grey;
+}
+
+.comment-form .comment-form-email {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-form-email input[type="email"] {
+  border: 1px solid #dee0ea;
+  outline: none;
+}
+
+.comment-form-email input[type="email"]:focus {
+  border-color: grey;
+}
+
+.comment-form .btn-submit{
+
+    display: inline-block;
+    padding: 0 1.5625rem;
+    line-height: 2.5rem;
     font-weight: 500;
-    margin-top: 1rem ;
-    margin-bottom: 1rem;
-    padding-bottom: 1.5rem;
-    
-    border-bottom: .0625rem solid #dee0ea;
-}
-
-.comment-form{
-
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.comment-form label{
-
-font-size: .875rem;
-}
-
-.comment-form label span{
-
-    font-size: .875rem;
-    color: red;
-    }
-
-.comment-form .comment-form-rating .rating-star{
-
-
-display: flex;
-gap: 1rem;
-
+    border: .0625rem solid black;
+    background-color: black;
+    color:#fff;
+    transition: 0.2s ease all;
+    align-self: flex-start;
 
 }
 
+.comment-form label:last-child{
 
-.comment-form .comment-form-rating .rating-star li{
+align-items: center;
 
-    padding-right: .2rem;
-    border-right: .0625rem solid gray;
-    
-    }
-
-    
-.comment-form .comment-form-rating .rating-star li i{
-
-   color:gray;
-   font-size: .75rem;
-    
-    }
-
-
+}
