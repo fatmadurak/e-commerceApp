@@ -34,7 +34,8 @@ font-size: .875rem;
 
     font-size: 1rem;
     font-weight: 500;
-    margin-bottom: .3125rem;
+    margin-bottom:1.25rem;
+    margin-top: .625rem;
 
 }
 
@@ -54,7 +55,66 @@ font-size: .875rem;
  
 
 }
+.single-tabs .comment-list{
 
+
+display: flex;
+flex-direction: column;
+row-gap: 1.25rem;
+
+
+}
+
+.single-tabs .comment-list li{
+
+    display: flex;
+    gap: 1.5rem;
+    
+    }
+
+ .comment-list .comment-avatar img{
+
+ display: flex;
+ border-radius: 50%;
+
+ }   
+    
+ .comment-text .comment-star {
+
+  display: flex;
+
+}
+
+
+
+.comment-text .comment-star i{
+
+    color: gold;
+    font-size: 12px;
+
+}
+
+
+.comment-text .comment-meta {
+
+display: flex;
+font-size: .75rem;
+    
+    }
+.comment-meta span:first-child{
+
+
+font-weight: bold;
+
+}
+
+
+
+.comment-text p {
+
+   font-size: .875rem;
+        
+        }
 
 
 
