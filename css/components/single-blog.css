@@ -1,0 +1,67 @@
+.single-blog{
+
+
+margin: 2.5rem 0;
+
+}
+
+
+.single-blog .single-blog-image{
+
+    width: 100%;
+}
+
+
+.single-blog .single-blog-meta{
+
+    margin: 1.25rem 0;
+    font-size: .75rem;
+    display: flex;
+
+}
+
+
+.single-blog .single-blog-meta .date{
+
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
+.single-blog .single-blog-meta .date:before,.single-blog .single-blog-meta .date:after{
+   
+    content: "";
+    width: .9375rem;
+    height: .0625rem;
+    background-color: #e51414;
+    margin: 0 .5rem;
+
+}
+
+.single-blog-meta .coat{
+
+    font-weight: 600;
+}
+
+
+.single-blog .single-blog-title{
+
+    font-size: 2.375rem;
+    font-weight: 600;
+    margin-bottom: .9375rem;
+}
+
+.single-blog p{
+
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #75767c;
+    margin-bottom: .625rem;
+}
+
+.single-blog blockquote {
+
+    padding: 1.25rem 1.875rem .75rem 3.125rem;
+    border-left: .25rem solid #dee0ea;
+    margin: 1.25rem 0;
+}

@@ -15,6 +15,7 @@
 @import url("components/product-detail/single-topbar.css");
 @import url("components/product-detail/single-content.css");
 @import url("components/product-detail/single-tabs.css");
+@import url("components/single-blog.css");
 
 /*layout*/
 @import url("layout/header.css");
