@@ -13,6 +13,13 @@ closeMenuSidebar.addEventListener("click", function () {
   sidebar.style.left = "-100%";
 });
 
+
+
+
+
+//click outside start
+
+
 document.addEventListener("click", function (event) {
   if (
     !event.composedPath().includes(sidebar) &&
@@ -21,6 +28,20 @@ document.addEventListener("click", function (event) {
     sidebar.style.left = "-100%";
   }
 });
+document.addEventListener("click", function (event) {
+  if (
+      !event.composedPath().includes(modalSearch) &&
+      !event.composedPath().includes(openSearchButton)
+    ) {
+
+      modalSearch.style.display = "none";
+    
+    }
+
+
+    //click outside end
+
+//modal search start
 
 openSearchButton.addEventListener("click", function () {
   modalSearch.style.display = "flex";
@@ -30,13 +51,16 @@ closeModalSearch.addEventListener("click", function () {
   modalSearch.style.display = "none";
 });
 
-document.addEventListener("click", function (event) {
-    if (
-        !event.composedPath().includes(modalSearch) &&
-        !event.composedPath().includes(openSearchButton)
-      ) {
 
-        modalSearch.style.display = "none";
-      
-      }
 });
+
+//modal search end
+
+
+//slider start
+
+
+
+
+
+//slider end
