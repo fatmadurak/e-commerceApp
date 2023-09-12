@@ -26,7 +26,7 @@
         <div class="container">
           <div class="header-wrapper">
             <div class="header-mobile">
-              <i class="bi bi-list"></i>
+              <i class="bi bi-list" id="openMenu"></i>
             </div>
 
             <div class="header-left">
@@ -34,8 +34,8 @@
             </div>
             <div class="header-center">
               <nav class="navbar">
-                <ul class="menu-list">
-                  <i class="bi bi-x-circle"></i>
+                <ul class="menu-list" id="menuSidebar">
+                  <i class="bi bi-x-circle" id="closeMenu"></i>
 
                   <li class="menu-list-item">
                     <a class="menu-link active" href="index.html"
@@ -177,7 +177,7 @@
                   ><i class="bi bi-person"></i>
                 </a>
                 <button class="toggle-button">
-                  <i class="bi bi-search"></i>
+                  <i class="bi bi-search" id="searchButton"></i>
                 </button>
                 <a href="#" class="header-heart"><i class="bi bi-heart"></i></a>
 
@@ -198,7 +198,7 @@
 
     <!--modal-search-start-->
 
-    <div class="madal-search">
+    <div class="madal-search" id="modalSearch">
       <div class="modal-wrapper">
         <h3 class="modal-title">Search a products</h3>
         <p class="modal-text">
@@ -290,7 +290,7 @@
           </div>
         </div>
 
-        <button><i class="bi bi-x-circle"></i></button>
+        <button id="closeSearchButton"><i class="bi bi-x-circle"></i></button>
       </div>
     </div>
 
@@ -1208,6 +1208,9 @@
     </div>
   </footer>
   <!--! footer end  -->
+
+
+ <script src="js/index.js"></script>
 
   </body>
 </html>
