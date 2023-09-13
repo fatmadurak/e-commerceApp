@@ -10,15 +10,16 @@
 .slider .glide__slides {
   height: 100%;
 }
+
+
+
 .slider .glide__track .slider-item {
   width: 100%;
+
+
 }
 
-.slider-item {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
+
 
 
 .slider-item {
@@ -26,7 +27,25 @@
   height: 100%;
   display: flex;
   align-items: center;
+ 
 }
+
+.fade{
+
+  animation-name: slide-anim;
+  animation-duration: 1.5s;
+}
+
+@keyframes slide-anim {
+  0%, 100% {
+      opacity: .4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+
 .slider-item .slider-image img {
   position: absolute;
   left: 0;
