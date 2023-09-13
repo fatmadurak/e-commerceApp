@@ -32,7 +32,9 @@
 
 .products {
   margin-bottom: 2.5rem;
+  position: relative;
 }
+
 
 .products .product-list {
   display: flex;

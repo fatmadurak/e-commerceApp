@@ -1,3 +1,4 @@
+
 .product-item{
     text-align: center;
     background-color: #efefef;
@@ -182,4 +183,24 @@ visibility: visible;
 opacity: 1;
 
      
+ }
+
+
+ .left-button{
+
+position: absolute;
+left: -5%;
+top:50%;
+font-size: 1.875rem;
+background-color: transparent;
+
+ }
+ .right-button{
+
+   position: absolute;
+   right: -5%;
+   top:50%;
+   font-size: 1.875rem;
+   background-color: transparent;
+
  }
