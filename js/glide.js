@@ -16,6 +16,7 @@ new Glide('.glide', {
     perView: 4,
     hoverpause: true,
     breakpoints: {
+  
       768: {
         perView: 2 // 768 piksel genişlikte 2 slayt göster
       },
