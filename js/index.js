@@ -1,66 +1,23 @@
-const openMenuSidebar = document.querySelector("#openMenu");
-const sidebar = document.getElementById("menuSidebar");
-const closeMenuSidebar = document.querySelector("#closeMenu");
-const openSearchButton = document.getElementById("searchButton");
-const modalSearch = document.getElementById("modalSearch");
-const closeModalSearch = document.getElementById("closeSearchButton");
+import { header } from "./header.js";
 
-openMenuSidebar.addEventListener("click", function () {
-  sidebar.style.left = "0%";
-});
+header();
 
-closeMenuSidebar.addEventListener("click", function () {
-  sidebar.style.left = "-100%";
-});
+async function GetData() {
+  try {
+    const products = await fetch("js/data.json");
+    const data = await products.json();
 
-
-
-
-
-//click outside start
-
-
-document.addEventListener("click", function (event) {
-  if (
-    !event.composedPath().includes(sidebar) &&
-    !event.composedPath().includes(openMenuSidebar)
-  ) {
-    sidebar.style.left = "-100%";
-  }
-});
-document.addEventListener("click", function (event) {
-  if (
-      !event.composedPath().includes(modalSearch) &&
-      !event.composedPath().includes(openSearchButton)
-    ) {
-
-      modalSearch.style.display = "none";
-    
+    if (data) {
+      console.log(data);
+      localStorage.setItem("products", JSON.stringify(data)); // data burada kullanılmalı, "data" değil
+    } else {
+      localStorage.setItem("products", JSON.stringify([])); // Boş bir dizi yerine null veya undefined
     }
 
+    console.log(data);
+  } catch (error) {
+    console.error("Veri çekme hatası:", error);
+  }
+}
 
-    //click outside end
-
-//modal search start
-
-openSearchButton.addEventListener("click", function () {
-  modalSearch.style.display = "flex";
-});
-
-closeModalSearch.addEventListener("click", function () {
-  modalSearch.style.display = "none";
-});
-
-
-});
-
-//modal search end
-
-
-//slider start
-
-
-
-
-
-//slider end
+GetData();

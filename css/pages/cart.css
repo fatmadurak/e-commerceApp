@@ -210,6 +210,10 @@
     border-color: #fff;
     width: 100%;
   }
+
+
+  .single-tabs table th, td {
+    border: none;}
   
   /*? collaterals end  */
   

@@ -27,6 +27,7 @@
    background-color: black;
    opacity: .5;
     display: block; 
+    z-index:1;
   }
   
   

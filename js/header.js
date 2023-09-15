@@ -1,0 +1,49 @@
+export function header() {
+  const openMenuSidebar = document.querySelector("#openMenu");
+  const sidebar = document.getElementById("menuSidebar");
+  const closeMenuSidebar = document.querySelector("#closeMenu");
+  const openSearchButton = document.getElementById("searchButton");
+  const modalSearch = document.getElementById("modalSearch");
+  const closeModalSearch = document.getElementById("closeSearchButton");
+
+  openMenuSidebar.addEventListener("click", function () {
+    sidebar.style.left = "0%";
+  });
+
+  closeMenuSidebar.addEventListener("click", function () {
+    sidebar.style.left = "-100%";
+  });
+
+  //click outside start
+
+  document.addEventListener("click", function (event) {
+    if (
+      !event.composedPath().includes(sidebar) &&
+      !event.composedPath().includes(openMenuSidebar)
+    ) {
+      sidebar.style.left = "-100%";
+    }
+  });
+  document.addEventListener("click", function (event) {
+    if (
+      !event.composedPath().includes(modalSearch) &&
+      !event.composedPath().includes(openSearchButton)
+    ) {
+      modalSearch.style.display = "none";
+    }
+
+    //click outside end
+
+    //modal search start
+
+    openSearchButton.addEventListener("click", function () {
+      modalSearch.style.display = "flex";
+    });
+
+    closeModalSearch.addEventListener("click", function () {
+      modalSearch.style.display = "none";
+    });
+  });
+
+  //modal search end
+}
