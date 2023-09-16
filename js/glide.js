@@ -10,10 +10,12 @@ new Glide('.glide', {
   }).mount();
 
 
+  export function glide2(){
+
   new Glide('.glide2', {
     type: 'carousel',
     startAt: 0,
-    perView: 4,
+    perView: 3,
     hoverpause: true,
     breakpoints: {
   
@@ -26,6 +28,7 @@ new Glide('.glide', {
       // İstediğiniz kadar breakpoint ekleyebilirsiniz
     }
   }).mount();
+  }
 
   new Glide('.glide3', {
     type: 'carousel',

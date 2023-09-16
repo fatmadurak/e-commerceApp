@@ -38,7 +38,7 @@
 
 .products .product-list {
   display: flex;
-  column-gap: 2rem;
+  column-gap: 1rem;
   flex-wrap: wrap;
 }
 
