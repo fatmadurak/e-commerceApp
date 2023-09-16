@@ -1,6 +1,7 @@
 import { header } from "./header.js";
 import { products } from "./products.js";
 
+
 header();
 products();
 

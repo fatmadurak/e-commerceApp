@@ -1,4 +1,6 @@
-export function products() {
+
+
+export  function products() {
   const productContainer = document.getElementById("productList");
   const productContainer2 = document.getElementById("productList2");
   const data = JSON.parse(localStorage.getItem("products"));
@@ -54,5 +56,9 @@ export function products() {
     // productHTML içeriğini productContainer'a ekleyin
     productContainer.innerHTML = productHTML;
     productContainer2.innerHTML = productHTML;
+
   }
+
+
+  
 }
