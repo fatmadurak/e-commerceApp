@@ -1,9 +1,41 @@
 
+let data = JSON.parse(localStorage.getItem("products"));
+let cart=[];
+
+function addToCart(){
+
+
+const buttons=[...document.getElementsByClassName("addToCart")];
+
+buttons.forEach((button)=>{
+
+button.addEventListener("click",function(e){
+
+  e.preventDefault();
+  var id=e.target.dataset.id;
+
+  const findProduct=data.find((product)=>product.id===Number(id))
+ 
+  cart.push({...findProduct});
+  localStorage.setItem("cart",JSON.stringify("cart"))
+
+})
+
+})
+
+
+
+
+}
+
+
+
+
 
 export  function products() {
   const productContainer = document.getElementById("productList");
   const productContainer2 = document.getElementById("productList2");
-  const data = JSON.parse(localStorage.getItem("products"));
+
 
 
   if (data ) {
@@ -35,7 +67,7 @@ export  function products() {
               <span class="old-price">$${item.price.oldPrice.toFixed(2)}</span>
             </div>
             <div class="product-links">
-              <button>
+              <button class="addToCart" data-id=${item.id}>
                 <i class="bi bi-basket-fill"></i>
               </button>
               <button>
@@ -56,7 +88,7 @@ export  function products() {
     // productHTML içeriğini productContainer'a ekleyin
     productContainer.innerHTML = productHTML;
     productContainer2.innerHTML = productHTML;
-
+    addToCart()
   }
 
 

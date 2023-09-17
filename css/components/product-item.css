@@ -176,6 +176,13 @@
     opacity: .5;
  }
 
+
+ .product-item .product-links i{
+
+pointer-events: none;
+  
+}
+
  .product-item:hover .product-links{
     
 transform: translate(70%);
