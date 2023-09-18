@@ -1,6 +1,11 @@
-
+import {updateCartCount} from "./index.js"
 let data = JSON.parse(localStorage.getItem("products"));
 let cart=[];
+
+
+
+cart= localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")):[];
+
 
 function addToCart(){
 
@@ -12,16 +17,30 @@ buttons.forEach((button)=>{
 button.addEventListener("click",function(e){
 
   e.preventDefault();
-  var id=e.target.dataset.id;
 
-  const findProduct=data.find((product)=>product.id===Number(id))
- 
-  cart.push({...findProduct});
-  localStorage.setItem("cart",JSON.stringify("cart"))
+  const id=e.target.dataset.id;
+
+   const findProduct=data.find((product)=>product.id===Number(id));
+
+  
+  
+
+   cart.push({...findProduct,quantity:1});
+
+   console.log(cart)
+
+   localStorage.setItem("cart",JSON.stringify(cart));
+   updateCartCount();
+
 
 })
 
+
+
+
+
 })
+
 
 
 
@@ -31,8 +50,7 @@ button.addEventListener("click",function(e){
 
 
 
-
-export  function products() {
+ export function products() {
   const productContainer = document.getElementById("productList");
   const productContainer2 = document.getElementById("productList2");
 
@@ -88,9 +106,10 @@ export  function products() {
     // productHTML içeriğini productContainer'a ekleyin
     productContainer.innerHTML = productHTML;
     productContainer2.innerHTML = productHTML;
-    addToCart()
+    addToCart();
   }
 
 
   
 }
+
