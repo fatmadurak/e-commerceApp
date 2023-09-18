@@ -1,10 +1,10 @@
 import {updateCartCount} from "./index.js"
 let data = JSON.parse(localStorage.getItem("products"));
-let cart=[];
+let cart=localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")):[];
 
 
 
-cart= localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")):[];
+
 
 
 function addToCart(){
@@ -27,7 +27,7 @@ button.addEventListener("click",function(e){
 
    cart.push({...findProduct,quantity:1});
 
-   console.log(cart)
+ 
 
    localStorage.setItem("cart",JSON.stringify(cart));
    updateCartCount();
@@ -104,9 +104,10 @@ button.addEventListener("click",function(e){
     });
 
     // productHTML içeriğini productContainer'a ekleyin
-    productContainer.innerHTML = productHTML;
-    productContainer2.innerHTML = productHTML;
+    productContainer ? productContainer.innerHTML = productHTML:"";
+    productContainer2 ? productContainer2.innerHTML = productHTML:"";
     addToCart();
+    updateCartCount();
   }
 
 

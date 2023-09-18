@@ -2,8 +2,10 @@ import { header } from "./header.js";
 import {products}   from "./products.js";
 
 
+
 header();
 products();
+
 
 
 (async function () {
@@ -31,11 +33,9 @@ products();
 
 export function updateCartCount() {
   const cartCount = document.querySelector(".header-card-count");
-  const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-  cartCount.innerHTML = cartItems.length.toString();
+  const cartItems = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")).length:"0";
+  cartCount.innerHTML = cartItems;
 }
-
-
 
 
 
