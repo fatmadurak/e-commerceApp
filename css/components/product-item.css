@@ -177,6 +177,17 @@
  }
 
 
+
+ .product-item .product-links button:disabled{
+
+
+opacity: .4;
+cursor: no-drop;
+
+
+
+ }
+
  .product-item .product-links i{
 
 pointer-events: none;

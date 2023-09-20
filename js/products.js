@@ -12,28 +12,51 @@ function addToCart(){
 
 const buttons=[...document.getElementsByClassName("addToCart")];
 
+
+
+
+
 buttons.forEach((button)=>{
 
-button.addEventListener("click",function(e){
+  const cartIn=cart.find((item)=>item.id===Number(button.dataset.id));
 
-  e.preventDefault();
-
-  const id=e.target.dataset.id;
-
-   const findProduct=data.find((product)=>product.id===Number(id));
-
+  if (cartIn) {
   
+    button.setAttribute("disabled","disabled");
+    
   
+  }
 
-   cart.push({...findProduct,quantity:1});
-
- 
-
-   localStorage.setItem("cart",JSON.stringify(cart));
-   updateCartCount();
+  else{
 
 
-})
+    button.addEventListener("click",function(e){
+
+      e.preventDefault();
+    
+      const id=e.target.dataset.id;
+    
+       const findProduct=data.find((product)=>product.id===Number(id));
+    
+      
+      
+    
+       cart.push({...findProduct,quantity:1});
+    
+     
+    
+       localStorage.setItem("cart",JSON.stringify(cart));
+       updateCartCount();
+       button.setAttribute("disabled","disabled");
+    
+    })
+
+
+
+  }
+
+
+
 
 
 
