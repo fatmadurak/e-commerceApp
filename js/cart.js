@@ -1,5 +1,5 @@
 let cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
-
+import {updateCartCount} from "./index.js"
 function displayCartProduct() {
   const cartWrapper = document.querySelector(".cart-wrapper");
   let result = "";
@@ -38,9 +38,6 @@ function removeCartItem() {
   });
 }
 
-function updateCartCount() {
-  const cartCountElement = document.querySelector(".header-card-count");
-  cartCountElement.innerHTML = cart.length;
-}
+
 
 displayCartProduct(); 
