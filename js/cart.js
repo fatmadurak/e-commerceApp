@@ -1,5 +1,7 @@
-let cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
-import {updateCartCount} from "./index.js"
+let cart = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
+import { updateCartCount } from "./index.js";
 function displayCartProduct() {
   const cartWrapper = document.querySelector(".cart-wrapper");
   let result = "";
@@ -14,15 +16,15 @@ function displayCartProduct() {
         <td>${item.name}</td>
         <td>$${item.price.newPrice}</td>
         <td class="product-quantity">${item.quantity}</td>
-        <td class="product-subtotal">$${item.quantity*item.price.newPrice}</td>
+        <td class="product-subtotal">$${
+          item.quantity * item.price.newPrice
+        }</td>
       </tr>
     `;
   });
   cartWrapper.innerHTML = result;
   removeCartItem();
   updateCartCount();
-
-
 }
 
 function removeCartItem() {
@@ -37,58 +39,31 @@ function removeCartItem() {
       localStorage.setItem("cart", JSON.stringify(cart));
       updateCartCount();
       saveCartValue();
-
     });
   });
 }
 
-function saveCartValue(){
+function saveCartValue() {
+  const subtotal = document.getElementById("subtotal");
+  const carttotal = document.getElementById("cart-total");
+  const fastcargo = document.getElementById("fast-cargo");
+  let cargo = 15;
+  let itemTotal = 0;
 
-const subtotal=document.getElementById("subtotal");
-const carttotal=document.getElementById("cart-total");
-const fastcargo=document.getElementById("fast-cargo");
-let cargo=15;
-let itemTotal=0;
+  cart.length > 0 &&
+    cart.map((item) => (itemTotal += item.price.newPrice * item.quantity));
 
- cart.length>0 && cart.map((item)=>itemTotal+=(item.price.newPrice)*(item.quantity));
+  subtotal.innerHTML = `$${itemTotal}`;
 
-
- subtotal.innerHTML=`$${itemTotal}`;
-
- fastcargo.addEventListener("change",function(e){
-
-
-  console.log(e.target.checked)
-   if (e.target.checked) {
-    
-     carttotal.innerHTML=`$${itemTotal+cargo}`;
-
-   }
-
-   else{
-
-
-    carttotal.innerHTML=itemTotal;
-
-   }
-
-  
-
-
-
-
- })
-
-
-
- 
-
-
-
-
-
-
+  fastcargo.addEventListener("change", function (e) {
+    console.log(e.target.checked);
+    if (e.target.checked) {
+      carttotal.innerHTML = `$${itemTotal + cargo}`;
+    } else {
+      carttotal.innerHTML = itemTotal;
+    }
+  });
 }
 
-displayCartProduct(); 
+displayCartProduct();
 saveCartValue();

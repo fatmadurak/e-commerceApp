@@ -1,85 +1,40 @@
-import {updateCartCount} from "./index.js"
+import { updateCartCount } from "./index.js";
 let data = JSON.parse(localStorage.getItem("products"));
-let cart=localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")):[];
+let cart = localStorage.getItem("cart")
+  ? JSON.parse(localStorage.getItem("cart"))
+  : [];
 
+function addToCart() {
+  const buttons = [...document.getElementsByClassName("addToCart")];
 
+  buttons.forEach((button) => {
+    const cartIn = cart.find((item) => item.id === Number(button.dataset.id));
 
+    if (cartIn) {
+      button.setAttribute("disabled", "disabled");
+    } else {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
 
+        const id = e.target.dataset.id;
 
+        const findProduct = data.find((product) => product.id === Number(id));
 
-function addToCart(){
+        cart.push({ ...findProduct, quantity: 1 });
 
-
-const buttons=[...document.getElementsByClassName("addToCart")];
-
-
-
-
-
-buttons.forEach((button)=>{
-
-  const cartIn=cart.find((item)=>item.id===Number(button.dataset.id));
-
-  if (cartIn) {
-  
-    button.setAttribute("disabled","disabled");
-    
-  
-  }
-
-  else{
-
-
-    button.addEventListener("click",function(e){
-
-      e.preventDefault();
-    
-      const id=e.target.dataset.id;
-    
-       const findProduct=data.find((product)=>product.id===Number(id));
-    
-      
-      
-    
-       cart.push({...findProduct,quantity:1});
-    
-     
-    
-       localStorage.setItem("cart",JSON.stringify(cart));
-       updateCartCount();
-       button.setAttribute("disabled","disabled");
-    
-    })
-
-
-
-  }
-
-
-
-
-
-
-
-
-})
-
-
-
-
-
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCartCount();
+        button.setAttribute("disabled", "disabled");
+      });
+    }
+  });
 }
 
-
-
-
- export function products() {
+export function products() {
   const productContainer = document.getElementById("productList");
   const productContainer2 = document.getElementById("productList2");
 
-
-
-  if (data ) {
+  if (data) {
     // data.array'nin tanımlı olduğunu ve içeriğinin bir dizi olduğunu kontrol edin
     let productHTML = ""; // HTML içeriği bir dize olarak başlatın
 
@@ -127,13 +82,9 @@ buttons.forEach((button)=>{
     });
 
     // productHTML içeriğini productContainer'a ekleyin
-    productContainer ? productContainer.innerHTML = productHTML:"";
-    productContainer2 ? productContainer2.innerHTML = productHTML:"";
+    productContainer ? (productContainer.innerHTML = productHTML) : "";
+    productContainer2 ? (productContainer2.innerHTML = productHTML) : "";
     addToCart();
     updateCartCount();
   }
-
-
-  
 }
-
