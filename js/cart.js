@@ -14,13 +14,15 @@ function displayCartProduct() {
         <td>${item.name}</td>
         <td>$${item.price.newPrice}</td>
         <td class="product-quantity">${item.quantity}</td>
-        <td class="product-subtotal">$108.00</td>
+        <td class="product-subtotal">$${item.quantity*item.price.newPrice}</td>
       </tr>
     `;
   });
   cartWrapper.innerHTML = result;
   removeCartItem();
   updateCartCount();
+
+
 }
 
 function removeCartItem() {
@@ -34,10 +36,59 @@ function removeCartItem() {
       displayCartProduct();
       localStorage.setItem("cart", JSON.stringify(cart));
       updateCartCount();
+      saveCartValue();
+
     });
   });
 }
 
+function saveCartValue(){
 
+const subtotal=document.getElementById("subtotal");
+const carttotal=document.getElementById("cart-total");
+const fastcargo=document.getElementById("fast-cargo");
+let cargo=15;
+let itemTotal=0;
+
+ cart.length>0 && cart.map((item)=>itemTotal+=(item.price.newPrice)*(item.quantity));
+
+
+ subtotal.innerHTML=`$${itemTotal}`;
+
+ fastcargo.addEventListener("change",function(e){
+
+
+  console.log(e.target.checked)
+   if (e.target.checked) {
+    
+     carttotal.innerHTML=`$${itemTotal+cargo}`;
+
+   }
+
+   else{
+
+
+    carttotal.innerHTML=itemTotal;
+
+   }
+
+  
+
+
+
+
+ })
+
+
+
+ 
+
+
+
+
+
+
+}
 
 displayCartProduct(); 
+saveCartValue();
