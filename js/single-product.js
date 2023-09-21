@@ -36,4 +36,11 @@ const glideImage=document.querySelector(".glideImage");
 
 glideImage.src=findProduct.img.singleImage;
 
+const glideImage2=document.querySelector(".glideImage2");
+
+glideImage2.src=findProduct.img.singleImage;
+
+const glideImage3=document.querySelector(".glideImage3");
+
+glideImage3.src=findProduct.img.singleImage;
 
