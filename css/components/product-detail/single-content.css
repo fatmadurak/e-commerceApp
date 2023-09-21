@@ -294,15 +294,47 @@ font-size: .8125rem;
 
 
 
- 
-
-  
-  
-
 
 }
 
 
+.glide4{
+
+
+  position: relative;
+}
+
+
+.glide__arrows{
+
+font-size: 1.875rem;
+
+
+
+  
+}
+
+.glide__arrows .glide__arrow--left{
+
+position: absolute;
+background-color: transparent;
+font-size: 1.875rem;
+left:0;
+top: 50%;
+transform: translateY(-50%);
+
+}
+
+.glide__arrows .glide__arrow--right{
+
+  position: absolute;
+  background-color: transparent;
+  font-size: 1.875rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  }
 
 
 
