@@ -34,13 +34,11 @@ imgDom.src=findProduct.img.singleImage;
 
 const glideImage=document.querySelector(".glideImage");
 
-glideImage.src=findProduct.img.singleImage;
+findProduct.img.thumbs.forEach((imageUrl, index) => {
+    glideImage.src = imageUrl;
+    console.log(glideImage.src);
+   
+  });
 
-const glideImage2=document.querySelector(".glideImage2");
 
-glideImage2.src=findProduct.img.singleImage;
-
-const glideImage3=document.querySelector(".glideImage3");
-
-glideImage3.src=findProduct.img.singleImage;
-
+  

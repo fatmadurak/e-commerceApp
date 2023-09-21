@@ -33,26 +33,6 @@ function addToCart() {
 
 function productDetail(){
 
-const productImage=[...document.getElementsByClassName("product-image")];
-
-console.log(productImage);
-productImage.forEach((item)=>{
-
-  item.addEventListener("click",function(e){
-
-    e.preventDefault();
-    const id=e.target.dataset.productId;
-
-    localStorage.setItem("product-id",JSON.stringify(id));
-
-    window.location.href="product.html"
-
-
-})
-
- 
-
-})
 
 const productLink=[...document.getElementsByClassName("product-link")];
 
@@ -93,7 +73,7 @@ export function products() {
         <li class="product-item">
           <div class="product-image">
   
-              <img src=${item.img.singleImage} alt="" class="img1 " data-productId=${item.id} />
+              <img src=${item.img.singleImage} alt="" class="img1 " } />
               <img src=${item.img.thumbs[1]} alt="" class="img2 " />
              
           </div>
