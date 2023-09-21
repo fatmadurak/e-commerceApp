@@ -30,6 +30,34 @@ function addToCart() {
   });
 }
 
+
+function productDetail(){
+
+const productLink=[...document.getElementsByClassName("product-link")];
+
+productLink.forEach((button)=>{
+
+ button.addEventListener("click",function(e){
+
+  const id=e.target.dataset.id;
+  e.preventDefault();
+
+ localStorage.setItem("product-id",JSON.stringify(id));
+
+ window.location.href="product.html";
+
+
+
+ })
+
+
+})
+
+
+
+
+}
+
 export function products() {
   const productContainer = document.getElementById("productList");
   const productContainer2 = document.getElementById("productList2");
@@ -69,7 +97,7 @@ export function products() {
               <button>
                 <i class="bi bi-heart-fill"></i>
               </button>
-              <a href="#">
+              <a href="#" class="product-link" data-id=${item.id} >
                 <i class="bi bi-eye-fill"></i>
               </a>
               <button>
@@ -86,5 +114,6 @@ export function products() {
     productContainer2 ? (productContainer2.innerHTML = productHTML) : "";
     addToCart();
     updateCartCount();
+    productDetail();
   }
 }
