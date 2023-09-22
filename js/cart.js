@@ -53,14 +53,16 @@ function saveCartValue() {
   cart.length > 0 &&
     cart.map((item) => (itemTotal += item.price.newPrice * item.quantity));
 
-  subtotal.innerHTML = `$${itemTotal}`;
+  // İlk değeri varsayılan bir değere ayarla
+  
+  subtotal.innerHTML = `$${itemTotal.toFixed(2)}`;
+  carttotal.innerHTML = `$${itemTotal.toFixed(2)}`;
 
   fastcargo.addEventListener("change", function (e) {
-    console.log(e.target.checked);
     if (e.target.checked) {
-      carttotal.innerHTML = `$${itemTotal + cargo}`;
+      carttotal.innerHTML = `$${(itemTotal + cargo).toFixed(2)}`;
     } else {
-      carttotal.innerHTML = itemTotal;
+      carttotal.innerHTML = `$${itemTotal.toFixed(2)}`;
     }
   });
 }
