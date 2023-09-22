@@ -158,14 +158,25 @@ background-color: #1367ef;
 border-color: #1367ef;
 
 }
-
 .btn-primary:hover{
 
-background-color: #fff;
-color: #1367ef;
-border-color: #1367ef;
+  background-color: #fff;
+  color: #1367ef;
+  border-color: #1367ef;
+  
+  }
+.btn-primary:disabled{
 
-}
+
+  color: #fff;
+  background-color: #1367ef;
+ border-color: #1367ef;
+ opacity:.2;
+  }
+  
+
+
+
 
 .btn-lg{
 

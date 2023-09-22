@@ -1,4 +1,4 @@
-import {updateCartCount} from "./index.js"
+
 
 const productId=localStorage.getItem("product-id")?JSON.parse(localStorage.getItem("product-id")):localStorage.setItem("product-id",JSON.stringify(1));
 
@@ -45,31 +45,33 @@ findProduct.img.thumbs.forEach((imageUrl, index) => {
 
 const quantityDom=document.querySelector("#quantity");
 const addtocartDom=document.querySelector("#addtoProduct");
-
+const cartCount = document.querySelector(".header-card-count");
 
 let cartIn=localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")):[];
 
 
-if (cartIn=[]) {
-  addtocartDom.addEventListener("click",function(e){
+if (!cartIn) {
 
-    e.preventDefault();
-  
-    cartIn.push({...findProduct,quantity:Number(quantityDom.value)})
-   
-    localStorage.setItem("cart",JSON.stringify(cartIn));
-    updateCartCount();
-    addtocartDom.setAttribute("disabled","disabled");
-  
-  })
-  
+  addtocartDom.setAttribute("disabled","disabled");
 }
 
 else{
 
+  addtocartDom.addEventListener("click",function(e){
 
-  addtocartDom.setAttribute("disabled","disabled");
+    e.preventDefault();
+  
+    console.log(Number(quantityDom.value));
+    cartIn.push({...findProduct,quantity:Number(quantityDom.value)})
+   
+    localStorage.setItem("cart",JSON.stringify(cartIn));
 
+    addtocartDom.setAttribute("disabled","disabled");
+  
+    cartCount.innerHTML=cartIn.length;
+
+
+  })
 
 }
 
