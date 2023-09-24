@@ -24,7 +24,14 @@
 }
 
 
+.single-tabs .tab-description,
+.single-tabs .tab-information,
+.single-tabs .tab-review
+{
 
+display: none;
+
+}
 
 
 
