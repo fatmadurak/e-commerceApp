@@ -13,9 +13,20 @@
   margin: 0.9375rem 0;
 }
 
+
+.single-tabs .tab-button {
+
+  cursor: pointer;
+}
+
 .single-tabs .tab-description p {
   font-size: 0.875rem;
 }
+
+
+
+
+
 
 .single-tabs h3 {
   font-size: 1rem;

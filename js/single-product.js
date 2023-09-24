@@ -1,4 +1,8 @@
 
+import tabsFunc from "./tabs.js" 
+
+
+
 
 const productId=localStorage.getItem("product-id")?JSON.parse(localStorage.getItem("product-id")):localStorage.setItem("product-id",JSON.stringify(1));
 
